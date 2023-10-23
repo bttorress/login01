@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="centering">
+    <form class="my-form">
+        <div class="login-welcome-row">
+            <img class="login-welcome"
+            src="assets/astronaut.jpg"
+            alt="astronaut">
+            <h1> Login</h1>
+        </div>
+
+    <div class="text-field">
+        <label for="email">E-mail:</label>
+        <input 
+        aria-label="Email" 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Your E-mail" 
+        required>
+
+        <img alt="Email icon" 
+        title="Email icon" 
+        src="/assets/email.svg">
+    </div>  
+    
+    <div class="text-field">
+        <label for="password">Password:</label>
+        <input 
+        id="password" 
+        type="password" 
+        aria-label="password"
+        name="password" 
+        placeholder="Your Password" 
+        title="Minimum 6 characters at least 1 Alphabet and 1 Number"
+        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" 
+        required>
+        
+        <img alt="Password Icon" 
+        title="Password Icon" 
+        src="/assets/password.svg">
+
+    </div>
+
+    <input type="submit" class="my-form__button" value="Login" 
+    >
+    <div class="my-form__actions">
+        <div class="my-form__row">
+            <span>Did you forget your password? </span>
+             <a href="#" title="Reset Password">Reset Password</a>      
+        
+    </div>
+    </div>
+    </form> 
+</div>
+</body>
+</html>
